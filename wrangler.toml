@@ -1,0 +1,17 @@
+name = "grocery"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+# Must exactly match the URL Twilio calls — the signature check hashes it.
+PUBLIC_URL = "https://grocery.YOUR-SUBDOMAIN.workers.dev"
+DAILY_LIMIT = "100"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "grocery"
+database_id = "PASTE_FROM_wrangler_d1_create"
+
+# Secrets (not stored here — set with `wrangler secret put`):
+#   TWILIO_AUTH_TOKEN
+#   ANTHROPIC_API_KEY

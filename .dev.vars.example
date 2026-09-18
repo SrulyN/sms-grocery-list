@@ -1,0 +1,4 @@
+# Copy this file to .dev.vars and fill in your own values.
+# .dev.vars is git-ignored and must never be committed.
+TWILIO_AUTH_TOKEN=your-twilio-auth-token-here
+ANTHROPIC_API_KEY=your-anthropic-api-key-here
